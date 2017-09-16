@@ -60,3 +60,29 @@ class StoreBlogPostRequest extends Request implements SanitizeFormRequest
     }
 }
 ```
+
+For this case if you will post request like this:
+```
+	[
+            'title' => 'test',
+            'body' => 'test',
+            'subject' => 'test',	    
+        ]
+```
+And you wanna get all request parameters from $request variable which is injected to your controller method.
+```php
+...
+	public function store(StoreBlogPostRequest $request)
+	{
+		$attributes = $request->all();
+		$blogPost = BlogPost::create($attributes);
+	}
+...
+```
+BlogPost model will receive only those parameters:
+```
+	[
+            'title' => 'test',
+            'body' => 'test',    
+        ]
+```
