@@ -60,8 +60,7 @@ class StoreBlogPostRequest extends Request implements SanitizeFormRequest
     }
 }
 ```
-
-For this case if you will post request like this:
+For this case if you will receive post request like this:
 ```
 	[
             'title' => 'test',
@@ -69,7 +68,7 @@ For this case if you will post request like this:
             'subject' => 'test',	    
         ]
 ```
-And you wanna get all request parameters from $request variable which is injected to your controller method.
+And you wanna get all request parameters from `$request` variable(which is injecting to your controller method).
 ```php
 ...
 	public function store(StoreBlogPostRequest $request)
