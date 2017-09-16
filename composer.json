@@ -1,0 +1,24 @@
+{
+  "name": "candasm/lafres",
+  "description": "Simple laravel form request sanitizer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Candas Minareci",
+      "email": "candasm@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Candasm\\Lafres\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Candasm\\Lafres\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "laravel/framework": "^5.0"
+  }
+}
