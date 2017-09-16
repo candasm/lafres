@@ -1,20 +1,20 @@
-#Lafres(Laravel 5 Form Request Sanitizer)
+# Lafres(Laravel 5 Form Request Sanitizer)
 
 
-####Why I create this package?
+#### Why I create this package?
 Sanitizer support does not exists anymore on laravel framework. Actually which is not necessary when there is a validation for form inputs.
 But when you want a simple functionality for form filtering ups! There is nothing to do rather then write a few lines.
 
-####What it does?
+#### What it does?
 Removes form keys which are not returning from rules method.  
 
-####Install
+#### Install
 
 ```
 $ composer require candasm/laravel-form-request-sanitizer
 ```
 
-####How to use it?
+#### How to use it?
 
 Just add trait in your application abstract Request class. 
 
