@@ -16,7 +16,7 @@ $ composer require candasm/laravel-form-request-sanitizer
 
 #### How to use it?
 
-Just add trait in your application abstract Request class. 
+Just use `SanitizeWhenResolvedTrait` in your application abstract Request class. 
 
 ```php
 <?php 
@@ -34,7 +34,7 @@ abstract class Request extends FormRequest {
 
 ```
 
-Add simple interface for your FormRequest classes
+And use `SanitizeFormRequest` interface in your FormRequest(exp: `StoreBlogPostRequest`) class.
 ```php
 <?php
 
